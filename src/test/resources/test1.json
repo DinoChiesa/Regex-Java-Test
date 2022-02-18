@@ -1,0 +1,10 @@
+{
+  "regex" : "^(exec|select)$",
+  "description": "first test",
+  "cases" : [
+    ["input", false, "testcase 0 description"],
+    ["input2", false, "testcase 1 description"],
+    ["select", true, "testcase 2 description"],
+    ["exec", true, "testcase 3 description"]
+   ]
+}
