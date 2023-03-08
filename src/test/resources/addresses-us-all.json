@@ -1,6 +1,6 @@
 {
   "source" : "https://github.com/EthanRBrown/rrad",
-  "regexToTest" : "(?i)(stock|select|exec)",
+  "regexToTest" : "(?i)\\b(ALTER|CREATE|DELETE|DROP|EXEC(UTE)?|INSERT( +INTO)?|MERGE|SELECT|UPDATE)\\b",
   "addresses": [
     {
       "address1": "1745 T Street Southeast",
