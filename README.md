@@ -1,8 +1,12 @@
 # Regular Expression Testing in Java
 
-Example of testing regular expressions in Java.
+This repo is a simple developer's aid in building and testing regex, implemented in Java. 
+You would use this if you want to build your own regular expressions, and test them rigorously against a large-ish data set of sample data. 
+The result of using this would be confidence that the regex you've selected will match input you expect it to match, and not match input you don't expect it to match. 
 
-This uses Java8, Junit4, and the Maven surefire plugin to run tests.
+For example, suppose one aspect of user interaction allows the user to submit an address. You may want to scan that address for "Bobby Tables"-type attacks.  You can use this tool to test your proposed regex against a large list of inputs, to assure yourself the regex is correct and valid. At the end you can insert that validated regex into your own app. 
+
+This uses Java 11 (minimum), Junit4, and the Maven surefire plugin to run tests.
 
 ## To Run Tests
 
