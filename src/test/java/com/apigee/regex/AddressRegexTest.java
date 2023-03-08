@@ -45,7 +45,7 @@ public class AddressRegexTest {
     return map;
   }
 
-  @Parameters(name = "{index}: {1} ({0})")
+  @Parameters(name = "item {index}: \"{0}\"")
   public static Collection<Object[]> examples() throws IOException, IllegalStateException {
     Map<String, Object> map = readAddressData();
 
@@ -68,7 +68,6 @@ public class AddressRegexTest {
   public void addressRegexTest() throws Exception {
     Matcher m = addressSafePattern.matcher(input);
     Boolean found = m.find();
-    //System.out.printf("%s\n", input);
-    Assert.assertFalse(input, found);
+    Assert.assertFalse((found)?String.format("flagged \"%s\" (%s)", input, m.group(1)): input, found);
   }
 }
